@@ -5,10 +5,12 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
-# Load environment variables
+#from langchain_openai import ChatOpenAI   -if openAI need to use
+
+
 load_dotenv()
 
-# Set environment variables for LangChain
+#os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 
